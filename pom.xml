@@ -13,7 +13,9 @@
 	<artifactId>gcp-03-storage-batchtransfer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gcp-03-storage-batchtransfer</name>
-	<description>Demo project for Spring Boot with Cloud Storage and BQTransfer</description>
+	<description>Demo project for Spring Boot with Cloud Storage and
+		BQTransfer
+	</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud-gcp.version>2.0.4</spring-cloud-gcp.version>
@@ -32,13 +34,30 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+		<!-- <dependency>
+			<groupId>org.apache.camel.springboot</groupId>
+			<artifactId>camel-spring-boot-starter</artifactId>
+			<version>3.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jms</artifactId>
+			<version>3.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-api</artifactId>
+			<version>3.10.0</version>
+		</dependency> -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-batch</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
